@@ -1,0 +1,18 @@
+
+<P id="showdata"></P>
+
+<script>
+const studentdata = [
+    {id: 1, name: "Asif", degree: "M.Tech"},
+    {id: 2, name: "Khalil", degree: "MCA"},
+    {id: 3, name: "Rose", degree: "BCA"}
+];
+
+const newdata = studentdata.map( (cValue) =>{
+    return `My name is ${cValue.name} and degree is ${cValue.degree}`;
+} );
+
+console.log(newdata);
+document.getElementById('showdata').innerHTML = newdata;
+
+</script>
